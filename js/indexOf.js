@@ -93,8 +93,8 @@ b_6.onclick = () => {
 b_7.onclick = (arr, elem) => {
     arr = a1;
     elem = +i_7.value || i_7.value;
-    for (let i = 0; i < arr.length; i++) {
-        console.log(arr);
+    for (let i = 0; i <= arr.length; i++) {
+        console.log(arr[i]);
         console.log(elem);
         if (elem !== arr[i]) return out_7.innerHTML = -1;
         return out_7.innerHTML = 'YES';
