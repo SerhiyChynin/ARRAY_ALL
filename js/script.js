@@ -1,4 +1,4 @@
-//indexOf; - ищет значения в массиве,Ю если не находть возвращает -1
+//indexOf; - ищет значения в массиве, если не находть возвращает -1
 
 const a = [1, 2, 3, 4, 5 ,1, 5];
 console.log(a.indexOf(3)); // index 2
@@ -57,12 +57,52 @@ let i_6 = document.querySelector('.i_6');
 let i_7 = document.querySelector('.i_7');
 let i_8 = document.querySelector('.i_8');
 
-const a1 = [10, 20, 30,'Hello' , 40, 50];
+const a1 = [10, 2, '2', 20, 30,'Hello' , 40, 50, 'Okay google'];
 
 b_1.onclick = () => {
      let n = +i_1.value || i_1.value;
     out_1.innerHTML = i_1.value + ': ' + 'index:' + a1.indexOf(n);
 }
+
+b_2.onclick = () => {
+    let n = +i_2.value || i_2.value;
+    if (a1.indexOf(n) !== -1) return out_2.innerHTML = a1.indexOf(n);
+    else if (a1.indexOf(n) === -1) return out_2.innerHTML = false; 
+}
+
+b_3.onclick = () => {
+    let n = +i_3.value || i_3.value;
+    if (a1.indexOf(n) !== -1) return out_3.innerHTML = true;
+    else if (a1.indexOf(n) === -1) return out_3.innerHTML = false; 
+}
+
+b_4.onclick = (arr, elem) => {
+    arr = a1;
+    elem = arr.indexOf(+i_4.value || i_4.value);
+    if (arr.indexOf(elem) !== elem) return out_4.innerHTML = true
+    return out_4.innerHTML = false
+    
+}
+
+let a6 = 'Hello my darling';
+b_6.onclick = () => {
+    let n = +i_6.value || i_6.value;
+     out_6.innerHTML = a6.indexOf(n);
+}
+
+b_7.onclick = (arr, elem) => {
+    arr = a1;
+    elem = +i_7.value || i_7.value;
+    for (let i = 0; i < arr.length; i++) {
+        console.log(arr);
+        console.log(elem);
+        if (elem !== arr[i]) return out_7.innerHTML = -1;
+        return out_7.innerHTML = 'YES';
+    }
+}
+
+
+
 
 
 
