@@ -36,3 +36,12 @@ const users = [
 
 let newUsers = users.filter(item => item.name.includes('i') ); 
 console.log(newUsers);
+
+
+//HomeWork
+
+b_1.onclick = () => {
+    let n = +i_1.value || i_1.value;
+    if (users.includes(n))  return out_1.innerHTML = 'Yes';
+    out_1.innerHTML = 'Next Time'
+}
