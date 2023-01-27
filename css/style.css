@@ -1,0 +1,26 @@
+
+.wrap {
+    /* display: flex; */
+    width: 1200px;
+    height: 1200px;
+    background-color: rgba(255, 228, 196, 0.482);
+    margin: 0 auto;
+    
+}
+section {
+    display: flex;
+    justify-content: space-around;
+}
+
+.b {
+    width: 100px;
+    height: 30px;
+    margin: 10px;
+}
+.out {
+    background-color: rgba(128, 255, 0, 0.611);
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+
+}
