@@ -19,7 +19,7 @@ else {
 
 
 const str = 'abcdefgsjdsakhfj';
-if (str.includes('fg1')) {
+if (str.includes('fg')) {
     console.log('YES ' + str.indexOf('fg'));
 }
 else {
@@ -27,21 +27,43 @@ else {
 }
 
 
-const users = [
+const users = [ 'Petrov',
     {'name': 'Ivanov', 'age': 44},
     {'name': 'Petrov', 'age': 12},
     {'name': 'Mishigin', 'age': 54},
     {'name': 'Petrushka', 'age': 33},
 ]
 
-let newUsers = users.filter(item => item.name.includes('i') ); 
-console.log(newUsers);
+// let newUsers = users.filter(item => item.name.includes('i') ); 
+// console.log(newUsers);
 
 
 //HomeWork
 
 b_1.onclick = () => {
     let n = +i_1.value || i_1.value;
-    if (users.includes(n))  return out_1.innerHTML = 'Yes';
-    out_1.innerHTML = 'Next Time'
+    console.log(n);
+    let newUsers = users.filter(item => item.name.includes(n))
+    console.log(newUsers);
+    return out_1.innerHTML = newUsers;
+    
+}
+
+b_2.onclick = () => {
+    let n = +i_2.value || i_2.value;
+    let newUsers = users.filter(item => item.name.includes(n))
+    console.log(newUsers);  
+    if (newUsers.includes(users)) return  out_2.innerHTML = newUsers;
+    else return out_2.innerHTML = newUsers.name;
+}
+
+
+
+if (users.includes('Petrov')) {
+    console.log('YES_____');
+    // out_3.innerHTML = 'Yes';
+}
+else {
+    console.log('NO_____');
+    // out_3.innerHTML = 'NO';
 }
