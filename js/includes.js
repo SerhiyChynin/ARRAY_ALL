@@ -46,9 +46,7 @@ const usefar = ['hello', 'okay', 'google', 123, 33, 66, 'Mishigin']
 b_1.onclick = () => {
     let n = +i_1.value || i_1.value;
     console.log(n);
-    let newUsers = users.filter(item => item.name.includes(n))
-    console.log(newUsers);
-    return out_1.innerHTML = newUsers;
+    return out_1.innerHTML = usefar.includes(n);
     
 }
 
@@ -56,8 +54,8 @@ b_2.onclick = () => {
     let n = +i_2.value || i_2.value;
     let newUsers = users.filter(item => item.name.includes(n))
     console.log(newUsers);  
-    if (newUsers.includes(users)) return  out_2.innerHTML = newUsers;
-    else return out_2.innerHTML = newUsers.object;
+    if (usefar.includes(n)) return  out_2.innerHTML = 'index: ' + usefar.indexOf(n);
+    else return out_2.innerHTML = false;
 }
 
 
