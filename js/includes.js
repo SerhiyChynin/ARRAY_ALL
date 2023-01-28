@@ -27,18 +27,21 @@ else {
 }
 
 
-const users = [ 'Petrov',
+const users = [ 
     {'name': 'Ivanov', 'age': 44},
     {'name': 'Petrov', 'age': 12},
     {'name': 'Mishigin', 'age': 54},
     {'name': 'Petrushka', 'age': 33},
 ]
 
-// let newUsers = users.filter(item => item.name.includes('i') ); 
-// console.log(newUsers);
+let newUsers = users.filter(item => item.name.includes('i') ); 
+console.log(newUsers);
 
 
 //HomeWork
+
+const usefar = ['hello', 'okay', 'google', 123, 33, 66, 'Mishigin']
+
 
 b_1.onclick = () => {
     let n = +i_1.value || i_1.value;
@@ -54,16 +57,18 @@ b_2.onclick = () => {
     let newUsers = users.filter(item => item.name.includes(n))
     console.log(newUsers);  
     if (newUsers.includes(users)) return  out_2.innerHTML = newUsers;
-    else return out_2.innerHTML = newUsers.name;
+    else return out_2.innerHTML = newUsers.object;
 }
 
 
+b_3.onclick = () => {
+    let n = +i_3.value || i_3.value;    
 
-if (users.includes('Petrov')) {
+if (usefar.includes(n)) {
     console.log('YES_____');
-    // out_3.innerHTML = 'Yes';
+    out_3.innerHTML = usefar.indexOf(n) + ' index: ' + n;
 }
 else {
     console.log('NO_____');
-    // out_3.innerHTML = 'NO';
-}
+    out_3.innerHTML = 'NO';
+}}
