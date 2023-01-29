@@ -28,6 +28,37 @@ document.querySelector('.pop').onclick = () => {
     let id = +document.querySelector('#goods').value;
     let goods = car.pop();
     document.querySelector('.out_9').innerHTML = car;
-    console.log('car' + goods + 'delete');
+    console.log('car ' + goods + ' delete');
 }
 
+
+// Home Work
+
+let strng = [];
+
+b_1.onclick = () => {
+    if (!strng.includes(i_1.value)) {
+        strng.push(i_1.value);
+        console.log(strng);
+        out_1.innerHTML = strng;
+    }
+    i_1.value = '';
+}
+
+let nmb = [];
+
+b_2.onclick = () => {
+    if (!nmb.includes(+i_2.value)) {
+        nmb.push(+i_2.value, i_2.value ** 3)
+    console.log(nmb);
+        out_2.innerHTML = nmb;
+    }
+    i_2.value = '';
+}
+ 
+let ar = [];
+b_3.onclick = () => {
+    out_3.innerHTML = 'length: ' + ar.push(i_3.value) +' ' + ar;
+    console.log(ar);
+    i_3.value = '';
+}
