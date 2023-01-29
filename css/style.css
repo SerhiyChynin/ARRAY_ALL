@@ -29,6 +29,10 @@ section {
     height: 30px;
     margin: 10px;
 }
+.b2 {
+    width: 100px;
+    margin-left: 10px;
+}
 .out {
     background-color: rgba(128, 255, 0, 0.611);
     width: 100px;
@@ -38,13 +42,21 @@ section {
     text-align: center;
     font-size: 24px;
     
-
-}
-.out_9 {
-    margin-top: 0;
-    margin-left: 1080px;
 }
 
+.block {
+    display: block;
+}
 .i {
-    width: 120px;
+    width: 95px;
+    margin-left: 5px;
+}
+.ii {
+    width: 100px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+.out_9 {
+    width: 340px;
 }
