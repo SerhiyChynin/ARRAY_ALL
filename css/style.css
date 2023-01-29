@@ -46,17 +46,19 @@ section {
 
 .block {
     display: block;
+    margin-left: 15px;
 }
 .i {
     width: 95px;
-    margin-left: 5px;
+    margin-left: 2px;
 }
 .ii {
     width: 100px;
-    height: 30px;
+    height: 25px;
     margin-left: 10px;
 }
 
 .out_9 {
     width: 340px;
+    background-color: greenyellow;
 }
