@@ -25,6 +25,29 @@ console.log(rrr);
 
 //Home_work
 
+b_1.onclick = () => {
+    let b = ar.concat(ar2);
+    out_1.innerHTML = b; 
+}
+
+b_2.onclick = () => {
+    let b = ddd.concat(fff, 'Hellooooo ', 222);
+    out_2.innerHTML = b;
+}
+
+b_3.onclick = () => {
+    let b = ddd.concat(fff, ar);
+    out_3.innerHTML = b;
+}
+let ggg = ['Heloo', 123, 555, 666, 45, 34, 324, 'Ha ha'];
+
+b_4.onclick = () => {
+    ggg.splice(3, 4, ' I add some thing ')
+    out_4.innerHTML = ggg;
+}
+
+
+
 
 
 
