@@ -7,7 +7,7 @@ let x = h.reduce((accum, item,) => {
     //     accum += item;    
     // }
     if (item > accum) {  // Самое большее значение
-        accum = item
+        accum = accum / item;
     }
         return accum;
 }, 0)  // Это стартовое значение акума. После функции , и 0. Если в начале массива будет отрицательное значение оно попадет в акум и сумма может быть некоректная, так как условия только выше 0, поэтому принудительно ставим акум 0 в самом конце
@@ -53,7 +53,7 @@ let ray = [123, 45, 666, 79, 245, 2345, 0];
 let ray1 = [
     [1, 2, 3, 4, 5],
     [234, 45, 356,],
-    [1,2,3,4,35,56,467,78,9,9,0]
+    [1,2,3,4,35,56,467,78,9,9,0,222]
 ]
 
 b_3.onclick = () => {
@@ -65,12 +65,64 @@ b_3.onclick = () => {
 }
 
 b_4.onclick = () => {
-    let b = ray.reduce((accum, item) => {
-        if (accum < item) accum = item;
-        return accum
+    let b = ray1.reduce((accum, item) => {
+
+        if (accum < item.length) accum = item.length;
+        return accum;
     }, 0)
     out_4.innerHTML = b;
 }
+
+b_5.onclick = () => {
+    let b = ray1.reduce((accum, item, index, array) => {        
+        if (accum < array)
+        accum = array;
+        return accum;
+    }, [])
+    out_5.innerHTML = b;
+}
+
+
+const temp = [+5, +7, +8, 0, -2];
+// console.log(Math.floor(temp.item));
+
+b_6.onclick = () => {
+    let b = temp.reduce((accum, item, index, array) => {        
+        accum = (accum + item);
+        let total = accum / array.length;
+        out_6.innerHTML = total;
+        return accum;
+    })
+
+}
+
+b_7.onclick = () => {
+    let b = aaa.reduce((accum, item, index, array) => {        
+        accum.push(item.id+ ': ' + item.city + ' ' )
+        return accum;
+    }, [])
+    out_7.innerHTML = b;
+}
+
+const country = [
+    {'name': 'Ukraine', 'id': 22},
+    {'name': 'Usa', 'id': 32},
+    {'name': 'England', 'id': 42 },
+]
+
+b_8.onclick = () => {
+    let b = country.reduce((accum, item, index, array) => {        
+        accum.push(item.name + ' ' )
+        return accum;
+    }, [])
+    console.log(Array.isArray(b));
+    out_8.innerHTML = b;
+}
+
+
+
+
+
 
 
 
