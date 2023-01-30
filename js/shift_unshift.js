@@ -36,6 +36,5 @@ b_2.onclick = () => {
     console.log(t);
     out_2.innerHTML = t;
     i_2.value = '';
-
 }
 
