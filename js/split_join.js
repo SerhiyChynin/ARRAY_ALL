@@ -33,4 +33,9 @@ b_3.onclick = () => {
     out_3.innerHTML = b; 
 }
 
+b_4.onclick = () => {
+    let b = str.split(' ', 3);
+    out_4.innerHTML = b; 
+}
+
 
