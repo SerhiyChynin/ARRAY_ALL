@@ -40,6 +40,43 @@ let xxx = ddd.lastIndexOf('e'); // работает и со строками и 
 console.log(xxx);
 
 
+// Home Work
+
+let a1 = [13, 15, 22, 23, 26, 35, 72];
+let a1_from = 17;
+let a1_to = 39;
+
+b_1.onclick = () => {
+    let b = a1.find(item => {
+        if (item > a1_from && item < a1_to) {
+            return true
+        }
+    })
+    out_1.innerHTML = b;
+}
+
+b_2.onclick = () => {
+    let b = a1.find(item => {
+        if (item > a1_from && item < a1_to) {
+            return true;
+        }
+    })
+    if (b === undefined) {
+        b = false
+    }
+    out_2.innerHTML = b;
+}
+
+b_3.onclick = () => {
+    let b = a1.filter(item => (item > a1_from && item < a1_to))
+   let c =  b.find(item => {
+        if (item >= a1_from) return true
+    })
+    console.log(b);
+    out_3.innerHTML = c;
+}
+
+
 
 
 
