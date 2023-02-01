@@ -46,5 +46,15 @@ b_3.onclick = () => {
     out_3.innerHTML = b.join(' ');
 }
 
+b_4.onclick = () => {
+    let b = Object.keys(u);
+    out_4.innerHTML = b.join(' ');
+}
+
+b_5.onclick = () => {
+    let b = u.fill(222, 3);
+    out_5.innerHTML = b.join(' ');
+}
+
 
 
