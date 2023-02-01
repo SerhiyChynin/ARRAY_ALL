@@ -55,9 +55,9 @@ b_2.onclick = () => {
 }
 
 let yyy = [
-    [10, 2, 3, 4],
-    [20, 3, 4, 5, 6],
-    [40,5,6,7]
+    [ 10, 2, 3, 4, 3],
+    [10, 3, 4, 5, 6],
+    [20, 5,6,7]
 ]
 console.log(yyy);
 
@@ -69,14 +69,12 @@ console.log(ttt);
 
 
 b_3.onclick = () => {
-    let b = yyy.reduce((accum, item, array) => {
-        accum = accum + item;
-        console.log(accum);
-        return accum
-    }, [])
-    out_3.innerHTML = b;
-    // let c = b.every(item => {
-    //     if (item > 20) return true;
-    // })
-    
+    let a = yyy.every(item => {
+        if (item.reduce((accum, item) => accum + item) > 20) {
+            return true;
+        }
+    })
+    console.log(a);
+
+    out_3.innerHTML = a;
 }
