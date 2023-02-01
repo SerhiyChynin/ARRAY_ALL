@@ -25,8 +25,26 @@ let kkk = {
     Yes: 33, Baby: 6,
 }
 console.log(Object.keys(p)); // в глубь метод не лезет, если вложенный масив то выведет только ключи первого уровня
-console.log(Object.keys(kkk)); // ключи у нас являються строками!!!!
+let rrr = Object.keys(kkk) ; // ключи у нас являються строками!!!!
+console.log(rrr);
+ 
 
 // Home Work
+
+b_1.onclick = () => {
+    let b = u.flat(4);
+    out_1.innerHTML = b.join(' ');
+}
+
+b_2.onclick = () => {
+    let b = u.flat();
+    out_2.innerHTML = b.join(' ');
+}
+
+b_3.onclick = () => {
+    let b = u.flat(6);
+    out_3.innerHTML = b.join(' ');
+}
+
 
 
