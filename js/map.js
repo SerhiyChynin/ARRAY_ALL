@@ -1,5 +1,6 @@
 
 const temp = [0, 4, 4, 6, 8, 7, 3, , -2, -1, 0];
+temp[20] = 22;
 
 let tF = temp.map(item => {  //map создает новый массив перебирает старый и в новый присваивает то что прописано в ретерн
     console.log(item);       //результирующий массив равен исходному, меп перебирает каждый елемент что то с ним делает и обязательно возвращает результат
@@ -62,4 +63,27 @@ b_3.onclick = () => {
     if(item >= 0) return item * 2
     })
     out_3.innerHTML = b.join(' ');
+}
+
+b_4.onclick = () => {
+    let b = temp.map((item, index) => {
+        return index
+    })
+    out_4.innerHTML = b.join(' ') + ' ' + temp.join(' ');
+}
+
+let fff2 = [
+    [1,2,3],
+    [1,4,2],
+    [1,6,4, 12],
+]
+
+b_5.onclick = () => {
+    let b = fff2.map((item) => {
+        return item.reduce((acc, item) => {
+            acc = acc + item;
+            return acc;
+        })
+    })
+    out_5.innerHTML = b.join(' ');
 }
