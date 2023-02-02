@@ -98,3 +98,40 @@ b_6.onclick = () => {
     })
     out_6.innerHTML = b.join(' ') + ' _______   ' + c.join(' ');
 }
+
+
+
+
+
+const map1 = new Map(); // Map - это структура итерируемая которая позволяет сохранять пары ключ - значение 
+map1.set('a', 100);
+map1.set('m', 555);
+map1.set('b', 200);
+map1.set('c', 300);
+
+console.log(map1);
+
+for (const item of map1) console.log(item);
+console.log(map1.get('m'));
+console.log(map1.has('b'));
+console.log(map1.delete('c')); //удалить ключ значение
+// console.log(map1.clear()); // очистить 
+console.log(map1);
+console.log(map1.values());  // покажет значение ключей. Возвращает mapIterator
+console.log([...map1.values()]); // перебранный массив
+// ...(spread) - перебирает елементы так как for of
+
+const map = new Map();
+map.set('0', '1');
+map.set('s2', '2s');
+map.set('3s', 's3');
+
+console.log(map);
+
+const arrr = [...map.values()];
+console.log(arrr);
+const resultt = arrr.map(value => parseInt(value, 10))
+console.log(resultt);
+
+
+
