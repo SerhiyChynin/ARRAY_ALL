@@ -4,9 +4,13 @@ const user4 = {
     age: 25,
     profession: 'programmer',
     salary: 70000,
-    help: function(){console.log('SOS');}
 };
 console.log(user4);
+// user4.passport = 'vm3442ii';
+
+Object.defineProperty(user4, 'passport', {
+    value: 'vm3442ii', enumerable: true
+})
 
 // keys
 
@@ -23,3 +27,4 @@ let entries = Object.entries (user4);
 console.log(entries);
 
 entries.map(([index, item]) => console.log(index, item));
+
