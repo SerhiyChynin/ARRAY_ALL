@@ -85,5 +85,16 @@ b_5.onclick = () => {
             return acc;
         })
     })
-    out_5.innerHTML = b.join(' ');
+    out_5.innerHTML = b.join(' ') + ' ' + fff2.flat().join(' ');
+}
+
+let rrr5 = [1, 2, 34, 5, 7, ]; 
+b_6.onclick = () => {
+    let b = rrr5.map((item, index) => {
+        return item
+    })
+    let c = rrr5.map((item, index) => {
+        return index
+    })
+    out_6.innerHTML = b.join(' ') + ' _______   ' + c.join(' ');
 }
