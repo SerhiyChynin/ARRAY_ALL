@@ -9,6 +9,14 @@ body {
     margin: 0 auto;
     
 }
+p {
+    text-align: center;
+    font-size: 40px;
+    background-color: rgba(0, 139, 139, 0.358);
+    height: 100px;
+    width: 200px;
+    color: blanchedalmond;
+}
 
 h1 {
     text-align: center;
