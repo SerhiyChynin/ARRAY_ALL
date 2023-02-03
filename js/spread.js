@@ -44,3 +44,29 @@ let b2 = { name: 'MishPish', param2: 32 };
 let resObject = { ...b1 }
 console.log(resObject);
 
+//Обьединяем обьекты
+
+let resObj2 = { ...b1, ...b2 }; // Порядок. Второй ключ перезатрет первый, свойства попадает оба
+console.log(resObj2);
+
+//"Добавление"свойств
+
+let b3 = { ...b1, bike: true }; // создали новый обьект
+console.log(b3);
+
+// rest ... - все аргументы которые не попадут в а, попадут в б в виде массива. Rest - остальные параметры в массив
+
+function ff1(a, ...b) {
+    console.log(a);
+    console.log(b);
+}
+ff1(1, 2, 3)
+
+// пример с переменной
+
+let [s10, ...s11] = [100, 200, 300, 400];
+console.log(s10);
+console.log(s11);
+
+
+
