@@ -65,8 +65,51 @@ ff1(1, 2, 3)
 // пример с переменной
 
 let [s10, ...s11] = [100, 200, 300, 400];
-console.log(s10);
 console.log(s11);
+
+//Деструктурирующее присваивание
+
+const a23 = [100, 200, 300, 400];
+let [s12, s13] = a23;
+console.log(s12);
+console.log(s13);
+
+//Строка
+
+let [x1, ,x2] = 'Intel pentium Inside'.split(' ');
+console.log(x1);
+console.log(x2);
+
+//set
+
+let [ , x3, , x4] = new Set('Hello'); // пробелом с запятой можн пропускать елементы
+console.log(x3);
+console.log(x4);
+
+// значение по умолчанию
+
+let [x5, x6 = 'Baby'] = [999]; 
+console.log(x5);
+console.log(x6);
+
+//Object
+
+let objt = {
+    fname: 'Alex',
+    passport: true,
+    age: 25,
+    best: 777
+}
+
+let { age, ppp, fname } = objt;
+console.log(age, ppp, fname);
+
+// по переменным
+
+let {age: x, fname: y, best: z = 55 } = objt;
+console.log(x, y, z);
+
+
 
 
 
