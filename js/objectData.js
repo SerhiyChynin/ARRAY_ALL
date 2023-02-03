@@ -20,7 +20,7 @@ console.log(typeof d3);
 
 const d5 = new Date('Fri Feb 03 2023 10:54:54 GMT+0200')
 console.log(d5);
-out_5.innerHTML = d5
+// out_5.innerHTML = d5
 out_6.innerHTML = d5.toUTCString()
 out_7.innerHTML = d5.toDateString()
 out_8.innerHTML = d5.toISOString()
@@ -53,3 +53,21 @@ function getUserTime(t) {
     return `${Y}.${M}.${D} ${h}:${m} ${d}`
 }
 console.log(getUserTime(new Date()));
+
+b_4.onclick = () => {
+    out_4.innerHTML = getUserTime(new Date())
+}
+
+window.onload = function () {
+    window.setInterval(function () {
+        let date = new Date();
+        let h = date.getHours();
+        let m = date.getMinutes();
+        let s = date.getSeconds();
+        if (h < 10) h = `0${h}`
+        if (m < 10) m = `0${m}`
+        if (s < 10) s = `0${s}`
+        let clock = `${h}:${m}:${s}`;
+        document.querySelector('.clock').innerHTML = clock;
+    }, 1000);
+}

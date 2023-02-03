@@ -62,3 +62,13 @@ section {
     width: 340px;
     background-color: greenyellow;
 }
+.clock {
+    height: 55px;
+    margin-top: 150px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    background-color: rgba(43, 43, 43, 0.901);
+    color: white;
+    border: 3px solid rgba(104, 104, 104, 0.771);
+}
