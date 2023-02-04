@@ -90,3 +90,9 @@ section {
 .img, .img2 {
     margin: 10px;
 }
+
+.symbol {
+    width: 50%;
+    border: 1px solid black;
+    margin: 10px
+}
