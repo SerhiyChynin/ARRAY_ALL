@@ -80,3 +80,13 @@ section {
     color: white;
     border: 3px solid rgba(104, 104, 104, 0.771);
 }
+.zone-1, .zone-2 {
+    border: 2px solid rgb(152, 231, 87);
+    margin: 10px;
+    padding: 0;
+    min-height: 150px;
+}
+
+.img, .img2 {
+    margin: 10px;
+}
